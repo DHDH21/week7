@@ -1,0 +1,26 @@
+{
+  "name": "readme-generator",
+  "version": "1.0.0",
+  "description": "test readme generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DHDH21/week7.git"
+  },
+  "keywords": [
+    "readme",
+    "generator"
+  ],
+  "author": "Damon Ha",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DHDH21/week7/issues"
+  },
+  "homepage": "https://github.com/DHDH21/week7#readme",
+  "dependencies": {
+    "inquirer": "^8.1.2"
+  }
+}
