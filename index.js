@@ -1,6 +1,8 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
-const path = require("path");
+const util = require("util");
+
+const generatorMarkdown = require('./util/generateMarkdown');
 
 
 
@@ -53,22 +55,32 @@ const questions = [
         type:"input",
         name:"contributors",
         message:"What does the user need to know contributing to the repo?",
-    }
+    },
 
-];
+]
 
 function writeToFile(fileName, data) {
-    return fs.writeFileSync(path.join(process.cwd(), fileName), data);
+
+    fs.writeFile(fileName, data, function(err) {
+        console.log(fileName)
+        console.log(data)
+        if (err) {
+            return console.log(err)
+        } else {
+            console.log("success")
+        }
+    })
 
 }
 
 function init() {
     inquirer.prompt(questions)
-    .then((inquirerAnswers) => {
-        console.log("Generating ReadMe");
-        writeToFile("./dist/ReadMe.md", generateMarkDown({...inquirerAnswers}));
-    })
-}
+        .then(function(data) {
+            writeToFile("README.md", generatorMarkdown(data));
+            console.log(data)
 
+        })
+
+}
 
 init();
