@@ -1,10 +1,11 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
-const Choices = require("inquirer/lib/objects/choices");
+const path = require("path");
 
 
 
-cosnt questions = [
+const questions = [
+
     {
         type:"input",
         name:"github",
@@ -55,3 +56,19 @@ cosnt questions = [
     }
 
 ];
+
+function writeToFile(fileName, data) {
+    return fs.writeFileSync(path.join(process.cwd(), fileName), data);
+
+}
+
+function init() {
+    inquirer.prompt(questions)
+    .then((inquirerAnswers) => {
+        console.log("Generating ReadMe");
+        writeToFile("./dist/ReadMe.md", generateMarkDown({...inquirerAnswers}));
+    })
+}
+
+
+init();
