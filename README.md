@@ -1,25 +1,34 @@
-
-# undefined
-https://github.com/undefined/undefined
-# Description
-undefined
-# Table of Contents 
-* [Installation](#installation)
-* [Usage](#usage)
+# test
+  ![GitHub license](https://img.shields.io/badge/license-MIT-yellowgreen.svg)
+  ## Github URL 🌐
+  [dhdh21](https://github.com/dhdh21/)
+  ## Description 📝
+  readme generator
+  ## Table of Contents 🗒
+  * [Installations](#dependencies)
+  * [Usage](#usage)
+  
 * [License](#license)
-* [Contributing](#contributing)
-* [Tests](#tests)
-* [Questions](#questions)
-# Installation
-The following necessary dependencies must be installed to run the application properly: undefined
-# Usage
-In order to use this app, undefined
-# License
-This project is licensed under the undefined license. 
-![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
-# Contributing
-​Contributors: undefined
-# Tests
-The following is needed to run the test: undefined
-# Questions
-If you have any questions about the repo, open an issue or contact undefined directly at : undefined.
+
+  * [Contributors](#contributors)
+  * [Test](#test)
+  ## Installations (Dependencies) 💻
+  To install dependencies, run these commands:
+  ```
+  npm i
+  ```
+  ## Usage 🏆
+  do not push node modules to Github
+  ## License 📛
+        Copyright © MIT. All rights reserved. 
+        
+        Licensed under the MIT license.
+  ## Contributors 😃
+  contact me if you have any questions
+  Contact me at damon.ha6@gmail.com
+  ## Tests 🧪
+  To run tests, run these commands:
+  ```
+  npm test
+  ```
+  
